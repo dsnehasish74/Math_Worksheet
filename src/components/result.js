@@ -5,7 +5,7 @@ const Result = ({ ans }) => {
     const [right, setRight] = useState(0)
     useEffect(() => {
         for (var i = 0; i < 10; i++) {
-            if (questions[i].ans == ans[i]) {
+            if (parseInt(questions[i].ans) === parseInt(ans[i])) {
                 setRight((no) => no + 1);
             }
         }
